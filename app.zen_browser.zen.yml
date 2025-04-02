@@ -34,6 +34,7 @@ modules:
     buildsystem: simple
     build-commands:
       - mv zen /app/
+      - rm /app/zen/libnssckbi.so
       - mkdir -p /app/lib/ffmpeg
 
       - install -Dm0755 metadata/launch-script.sh ${FLATPAK_DEST}/bin/launch-script.sh
