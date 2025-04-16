@@ -74,4 +74,3 @@ modules:
         sha256: 110e7eb840aae1d1a02f5f4488cdbc76c12a560f13b57f10285f7b2ef0f2b125
         strip-components: 0
         dest: metadata
-        
