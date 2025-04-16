@@ -71,7 +71,7 @@ modules:
           
       - type: archive
         url: https://github.com/zen-browser/flatpak/releases/download/1.11.2b/archive.tar
-        sha256: e02aca162856701ccd67506c12230157036e9be729fd11fc6e29c3304c98d888
+        sha256: 4087f0dd7de034416ff278538039889f417ed972
         strip-components: 0
         dest: metadata
         
