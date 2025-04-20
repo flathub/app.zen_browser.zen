@@ -44,8 +44,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.11.4b/zen.linux-x86_64.tar.xz
-        sha256: 7e294069e18b1c51f94ac3ad19356dccdcfab34de1757c9a438dae666b2081ce
+        url: https://github.com/zen-browser/desktop/releases/download/1.11.5b/zen.linux-x86_64.tar.xz
+        sha256: 9840082fded87c9d47d8e6497ba5665594eb6492a06f7fe45a68c5e591d4e647
         strip-components: 0
         only-arches:
           - x86_64
@@ -57,8 +57,8 @@ modules:
           is-main-source: true
 
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.11.4b/zen.linux-aarch64.tar.xz
-        sha256: 9df8ff0a73f56a1389c4912dd26cf226ef133ccc7fbcca17cec1152d0313c3ad
+        url: https://github.com/zen-browser/desktop/releases/download/1.11.5b/zen.linux-aarch64.tar.xz
+        sha256: b4de00862e34c9e95a742553775f2d3a9b87bf36f97211e09ff3219bf97636de
         strip-components: 0
         only-arches:
           - aarch64
@@ -70,7 +70,7 @@ modules:
           is-main-source: true
 
       - type: archive
-        url: https://github.com/zen-browser/flatpak/releases/download/1.11.4b/archive.tar
-        sha256: 4e75a459e72d46f227ee7027aeedd39289848c0241efbba5be835ce6b263cb18
+        url: https://github.com/zen-browser/flatpak/releases/download/1.11.5b/archive.tar
+        sha256: b76aca1aa1ae969bd480de8dd2273f6dbff70145ee0a82d62c19170b0e71d8e3
         strip-components: 0
         dest: metadata
