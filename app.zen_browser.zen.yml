@@ -44,8 +44,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.15.3b/zen.linux-x86_64.tar.xz
-        sha256: ec978be61aadfce5ac5a1a29226cfdfefc3e6d622de7fdcb80db1722b1a9ae5c
+        url: https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen.linux-x86_64.tar.xz
+        sha256: d035d4585d5d2811b1850b2e95af5e4ee0c30df6911c560fe5b52408a0110402
         strip-components: 0
         only-arches:
           - x86_64
@@ -57,8 +57,8 @@ modules:
           is-main-source: true
 
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.15.3b/zen.linux-aarch64.tar.xz
-        sha256: 2d9733fffd5afc0d67d53289c67b842e395488dd0ee6570abfedbafb2f5ab3a6
+        url: https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen.linux-aarch64.tar.xz
+        sha256: 01c35497d34245faa59a9a0dc06344624c47c3118c00be69b5f2902296f282ef
         strip-components: 0
         only-arches:
           - aarch64
