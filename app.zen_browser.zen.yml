@@ -11,6 +11,7 @@ add-extensions:
     add-ld-path: .
 command: launch-script.sh
 finish-args:
+  - --allow=devel
   - --share=ipc
   - --share=network
   - --socket=pulseaudio
@@ -19,16 +20,31 @@ finish-args:
   - --socket=pcsc
   - --socket=cups
   - --persist=.zen
+  - --env=DICPATH=/usr/share/hunspell
+  - --filesystem=xdg-data/applications:create
+  - --filesystem=xdg-data/icons:create
   - --filesystem=xdg-download:rw
+  - --filesystem=/run/.heim_org.h5l.kcm-socket
+  - --filesystem=xdg-run/speech-dispatcher:ro
   - --device=all
   - --talk-name=org.freedesktop.FileManager1
-  - --talk-name=org.freedesktop.ScreenSaver
-  - --own-name=org.mozilla.zen.*
-  - --own-name=org.mpris.MediaPlayer2.firefox.*
   - --system-talk-name=org.freedesktop.NetworkManager
   - --talk-name=org.a11y.Bus
-  - --env=GTK_PATH=/app/lib/gtkmodules
-  - --env=MESA_SHADER_CACHE_DIR=/var/cache/mesa_shader_cache_db
+  - --talk-name=org.gtk.vfs.*
+  - --own-name=org.mpris.MediaPlayer2.firefox.*
+  - --own-name=org.mozilla.zen.*
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/pkgconfig
+  - /share/aclocal
+  - /share/gtk-doc
+  - /share/doc
+  - /share/info
+  - /man
+  - /share/man
+  - '*.la'
+  - '*.a'
 modules:
   - name: zen_browser
     buildsystem: simple
@@ -44,8 +60,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.15.3b/zen.linux-x86_64.tar.xz
-        sha256: 8c1c22449dcd46dfa4a2dc079bda0cd8da1f7cd70b83a5b40a0b6d611d025528
+        url: https://github.com/zen-browser/desktop/releases/download/1.15.4b/zen.linux-x86_64.tar.xz
+        sha256: 8d8f5e4bf9df9ce10e5c3f57369c54c9fe8ea070017139d8edec0334699a081e
         strip-components: 0
         only-arches:
           - x86_64
@@ -57,8 +73,8 @@ modules:
           is-main-source: true
 
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.15.3b/zen.linux-aarch64.tar.xz
-        sha256: 1ddc34fecf2eb4cb747440cfc5f71558b46de3f679acaef3eca496c05a674566
+        url: https://github.com/zen-browser/desktop/releases/download/1.15.4b/zen.linux-aarch64.tar.xz
+        sha256: 0e1308ac713c44d3eca34b13d68f9d34d8d541a4b5b62496cc6c09e1646cdc56
         strip-components: 0
         only-arches:
           - aarch64
@@ -70,7 +86,7 @@ modules:
           is-main-source: true
 
       - type: archive
-        url: https://github.com/zen-browser/flatpak/releases/download/1.15.3b/archive.tar
-        sha256: 29032d7cdb81c44447765f0eca31afdbb85982e6a76eb00b458d88e7ddfaedf5
+        url: https://github.com/zen-browser/flatpak/releases/download/1.15.4b/archive.tar
+        sha256: 28457eca9b48ce8e0706d9390cc86d8f61183854f044fcc7228c3a611da3ebd5
         strip-components: 0
         dest: metadata
