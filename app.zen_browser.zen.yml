@@ -9,6 +9,9 @@ add-extensions:
     directory: lib/ffmpeg
     version: '24.08'
     add-ld-path: .
+  app.zen_browser.zen.systemconfig:
+    directory: etc/zen
+    add-ld-path: .
 command: launch-script.sh
 finish-args:
   - --allow=devel
