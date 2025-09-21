@@ -11,7 +11,7 @@ add-extensions:
     add-ld-path: .
   app.zen_browser.zen.systemconfig:
     directory: etc/zen
-    add-ld-path: .
+    no-autodownload: true
 command: launch-script.sh
 finish-args:
   - --allow=devel
