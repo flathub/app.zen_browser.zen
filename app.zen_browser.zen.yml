@@ -1,6 +1,6 @@
 app-id: app.zen_browser.zen
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '24.08.26'
 sdk: org.freedesktop.Sdk
 base: org.mozilla.firefox.BaseApp
 base-version: '24.08'
