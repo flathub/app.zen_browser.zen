@@ -7,7 +7,7 @@ base-version: '25.08'
 add-extensions:
   app.zen_browser.zen.systemconfig:
     directory: etc/zen
-    no-autodownload: true
+    no-autodownload: true 
 command: launch-script.sh
 finish-args:
   - --allow=devel
