@@ -57,21 +57,21 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.21.4b/zen.linux-x86_64.tar.xz
-        sha256: 02b814ccd0e6659468d438fa3be91c0e9934b1f0d5c58078319ea7a6e26729eb
+        url: https://github.com/zen-browser/desktop/releases/download/1.21.5b/zen.linux-x86_64.tar.xz
+        sha256: 0dea09bbc5fed9e1e32839f288a609b0b20eb1befed8d4f892e222a65dfaa069
         strip-components: 0
         only-arches:
           - x86_64
 
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.21.4b/zen.linux-aarch64.tar.xz
-        sha256: 9b1c9ee05f02d03b1d4e7982e3a8a1f48221868e163f6f438aece366dc98e71c
+        url: https://github.com/zen-browser/desktop/releases/download/1.21.5b/zen.linux-aarch64.tar.xz
+        sha256: 8178a85fca13ca1baf03c8c003ff833f4fae829a6b0e84d0111f28737f0c3b00
         strip-components: 0
         only-arches:
           - aarch64
 
       - type: archive
-        url: https://github.com/zen-browser/flatpak/releases/download/1.21.4b/archive.tar
-        sha256: d85fd5200ff2500d2a3cb24dc8bd84c51663d12bf4842e4856e6dc9529b00b5a
+        url: https://github.com/zen-browser/flatpak/releases/download/1.21.5b/archive.tar
+        sha256: 40e664671a316c052b00bd71efc546f8c561ab515bce7f0a02f51f7af679b1cf
         strip-components: 0
         dest: metadata
