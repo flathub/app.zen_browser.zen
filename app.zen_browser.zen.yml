@@ -58,20 +58,20 @@ modules:
     sources:
       - type: archive
         url: https://github.com/zen-browser/desktop/releases/download/1.21.13b/zen.linux-x86_64.tar.xz
-        sha256: e4480b1fbaa70ce3cf7182acb7e6a5aa80092ac35720e2aca8a1efa2eb002bcb
+        sha256: d54b0b826fcdfdfe631a873c7a408cdfef684213e8a68c0fc1310c6c2ff8a6e9
         strip-components: 0
         only-arches:
           - x86_64
 
       - type: archive
         url: https://github.com/zen-browser/desktop/releases/download/1.21.13b/zen.linux-aarch64.tar.xz
-        sha256: b603bdf14d11b8aa01db50c79235d0eddc75d31d54974358eb260319a0f548d8
+        sha256: 72c9624d830f56dd5a46482bdc646daf36bec1a2186a4f5f0856bd6d723509ac
         strip-components: 0
         only-arches:
           - aarch64
 
       - type: archive
         url: https://github.com/zen-browser/flatpak/releases/download/1.21.13b/archive.tar
-        sha256: 8a43d4254a471a38fef246a4f4402716be67ef735084ed3e5878039d6eecddb3
+        sha256: 7fcda837fb2508f279e9ec4f2e100b5fa692b4c73a35f973f859f598ad8395b9
         strip-components: 0
         dest: metadata
