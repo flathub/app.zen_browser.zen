@@ -26,7 +26,6 @@ finish-args:
   - --device=all
   - --talk-name=org.freedesktop.FileManager1
   - --system-talk-name=org.freedesktop.NetworkManager
-  - --system-talk-name=org.freedesktop.Avahi
   - --talk-name=org.a11y.Bus
   - --talk-name=org.gtk.vfs.*
   - --own-name=org.mpris.MediaPlayer2.firefox.*
@@ -58,21 +57,21 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.23.3b/zen.linux-x86_64.tar.xz
-        sha256: 77d70789cb1ac48871774169cf1750772e89eb671f4a258724ef45d69c886f15
+        url: https://github.com/zen-browser/desktop/releases/download/1.23.2b/zen.linux-x86_64.tar.xz
+        sha256: 5e67f4fa081b1b437243c464449ea1bd2a3b15b6f932487a8aa0c25aa8514600
         strip-components: 0
         only-arches:
           - x86_64
 
       - type: archive
-        url: https://github.com/zen-browser/desktop/releases/download/1.23.3b/zen.linux-aarch64.tar.xz
-        sha256: 2e49f30e17e55f956180763065e5776ee3fc2ac00aecd8be9be465c2dc937605
+        url: https://github.com/zen-browser/desktop/releases/download/1.23.2b/zen.linux-aarch64.tar.xz
+        sha256: 96971f099c0adeae6a2edb4e128596d0706df974ac279b5ecde2aa93b07621d8
         strip-components: 0
         only-arches:
           - aarch64
 
       - type: archive
-        url: https://github.com/zen-browser/flatpak/releases/download/1.23.3b/archive.tar
-        sha256: c4f8b5698bb67f9ff60a4bf5df269d28d9f08b3147fa4c0947dd13b23a27153c
+        url: https://github.com/zen-browser/flatpak/releases/download/1.23.2b/archive.tar
+        sha256: d69e164c2495f9e29fb9d1f900395e809dd5fdfb146e95a04fa7386271115595
         strip-components: 0
         dest: metadata
